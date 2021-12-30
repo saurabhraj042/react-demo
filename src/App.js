@@ -1,12 +1,19 @@
-import './App.css';
-import Box from './components/Box';
+import React, { Component } from "react";
+import Box from "./components/Box";
+import "./App.css";
 
-function App() {
+class App extends Component {
+  render() {
     return (
-      <div>
-        <Box/>
+      <div className="centered">
+        <div>
+          <Box color={`#FF0000`} />
+          <Box color={`#FF0000`} />
+          <button>Change Color</button>
+        </div>
       </div>
     );
+  }
 }
 
 export default App;

@@ -38,8 +38,16 @@
 }
 
 .box {
-    height: 20px;
-    width: 20px;
+    width: 13em;
+    height: 13em;
     margin-bottom: 15px;
     border: 1px solid black;
+}
+
+.centered {
+    height: 100vh;
+    /* Magic here */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

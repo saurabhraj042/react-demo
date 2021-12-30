@@ -1,7 +1,9 @@
 import React from "react";
 
-function Box() {
-  return <div className="box" style={{backgroundColor:"blue",width:'13em', height:'13em'}}></div>;
+function Box(props) {
+  const color = props.color;
+
+  return <div className="box" style={{ backgroundColor: color }}></div>;
 }
 
 export default Box;
