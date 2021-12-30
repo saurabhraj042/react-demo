@@ -11,7 +11,7 @@ class App extends Component {
       colorTwo: `#00FF00`,
     };
 
-    this.colorChangeHandler = this.colorChangeHandler.bind(this)
+    this.colorChangeHandler = this.colorChangeHandler.bind(this);
   }
 
   genRandomColorCode() {
@@ -20,15 +20,15 @@ class App extends Component {
     );
   }
 
-  colorChangeHandler(){
+  colorChangeHandler() {
     const randomColorOne = this.genRandomColorCode();
     const randomColorTwo = this.genRandomColorCode();
-    
+
     this.setState({
       colorOne: randomColorOne,
       colorTwo: randomColorTwo,
-    })
-  }  
+    });
+  }
 
   render() {
     return (
